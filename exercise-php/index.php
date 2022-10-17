@@ -12,10 +12,11 @@
 </head>
 <body>
     <!-- Header -->
-    
+    <header class="container p-3">
+        <img src="./img/logo.png" alt="">
+    </header>
 
     <!-- Main -->
-    
             
 </body>
 </html>
