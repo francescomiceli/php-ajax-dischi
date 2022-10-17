@@ -1,3 +1,8 @@
+<?php
+require __DIR__ . '/data/database.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +17,19 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="container p-3">
+    <header class="container-fluid p-3">
         <img src="./img/logo.png" alt="">
     </header>
 
     <!-- Main -->
+    <section class="container-fluid main-content p-5">
+        <div class="container">
+            <div class="row">
+            <?php foreach($database as $value) : ?>
+            <?php?>
+            </div>
+        </div>
+    </section>
             
 </body>
 </html>
