@@ -1,6 +1,6 @@
 <?php
-require __DIR__ . '/data/database.php';
-
+require_once __DIR__ . '/data/database.php';
+// var_dump($database);
 ?>
 
 <!DOCTYPE html>
@@ -18,15 +18,26 @@ require __DIR__ . '/data/database.php';
 <body>
     <!-- Header -->
     <header class="container-fluid p-3">
-        <img src="./img/logo.png" alt="">
+        <img src="./assets/logo.png" alt="">
     </header>
 
     <!-- Main -->
     <section class="container-fluid main-content p-5">
         <div class="container">
             <div class="row">
-            <?php foreach($database as $value) : ?>
-            <?php?>
+                    <?php foreach($database as $value) : ?>
+                    <div class="col-4">
+
+                        <div class="music-card p-3 mb-3">
+                            <img src="<?php echo $value['poster'] ?>" alt="">
+                            <h4><?php echo $value['title'] ?></h4>
+                            <span class="d-block"><?php echo $value['author'] ?></span>
+                            <span class="d-block"><?php echo $value['year'] ?></span>
+                            <span class="d-block"><?php echo $value['genre'] ?></span>
+                        </div>
+                                    
+                    </div>
+                    <?php endforeach; ?>
             </div>
         </div>
     </section>
