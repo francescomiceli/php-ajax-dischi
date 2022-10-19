@@ -1,0 +1,91 @@
+/* RESET RULES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* /RESET RULES */
+
+/* GENERAL RULES */
+body{
+    background-color: #1E2D3B;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+select{
+    width: 200px;
+    background-color: #1E2D3B;
+    color: white;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 0 10px 0 10px;
+    font-weight: 600;
+    text-align: center;
+
+}
+/* /GENERAL RULES */
+
+/* HEADER SECTION */
+header{
+    height: 7vh;
+    margin-bottom: 35px;
+    background-color: #2E3A46;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    object-fit: cover;
+    height: 100%;
+}
+/* /HEADER SECTION */
+
+
+/* MAIN SECTION */
+main{
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+main .card{
+    width: calc(100% / 5 - 30px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 20px 0;
+    margin: 20px 15px 0;
+    background-color: #2E3A46;
+}
+main .card .container-album-img,
+main .card .container-album-txt{
+    width: 80%;
+}
+main .card .container-album-img img{
+    object-fit: cover;
+    width: 100%;
+}
+main .card h3,
+main .card p{
+    text-align: center;    
+}
+
+main .card h3{
+    color: white;
+    padding: 10px 0 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+main .card p{
+    color: #797C7E;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+/* /MAIN SECTION */
